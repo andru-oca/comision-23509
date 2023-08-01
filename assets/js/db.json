@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Asistencia",
+    "img_path": "./assets/imgs/attendance.webp",
+    "link_uri": "https://forms.gle/utJ6HPjU6vbQ6mxA6",
+    "texto": "Link de asistencia, detalles a tener en cuenta que la asistencia se activara cuando el instructor a cargo."
+  },
+  {
+    "title": "Google Meet",
+    "img_path": "./assets/imgs/meet.jpg",
+    "link_uri": "https://meet.google.com/weo-rjzx-gxv",
+    "texto": "Link de meet para las clases sincronicas"
+  },
+  {
+    "title": "Google Drive",
+    "img_path":"./assets/imgs/gdrive.jpg",
+    "link_uri":"https://drive.google.com/drive/folders/1DOQPXb-0OOaZ6dL__QbjfxNhtlxes9Kv",
+    "texto":"Link con lo trabajado en clase"
+  },
+  {
+    "title": "YouTube Channel",
+    "img_path":"./assets/imgs/youtube.jpg",
+    "link_uri":"https://www.youtube.com/playlist?list=PLqJAgZgcmtB-Z4WtvYCFhCCRlEk2AeC_t",
+    "texto":"Canal de youtube con las clases sincronicas"
+  },
+  {
+    "title": "GitHub Repository",
+    "img_path":"./assets/imgs/github.jpeg",
+    "link_uri":null,
+    "texto":"Repositorio de Github, en ello se subira el codigo, implementando conocimientos de codigo en la nube"
+  },
+  {
+    "title": "Formulario Consultas",
+    "img_path":"./assets/imgs/consultas.jpg",
+    "link_uri":"https://forms.gle/uvntTtVPKHiR9XAz8",
+    "texto":"Formulario de consultas con la tutor: ' Camila Diaz' "
+
+  },
+  {
+    "title": "Agencia Aprendizaje a lo largo de la Vida",
+    "img_path":"./assets/imgs/agencia-aprendizaje.jpeg",
+    "link_uri":"https://agenciadeaprendizaje.bue.edu.ar/",
+    "texto":"URL de la agencia"
+  },
+  {
+    "title":"Plan de Estudio",
+    "img_path":"./assets/imgs/plan-estudio.jpeg",
+    "link_uri":"https://drive.google.com/file/d/1X41mYqahAAXPgsl79wifmdTbkfowg1fw/view",
+    "texto":"Plan de estudios para la comision de full stack python"
+  }
+]
