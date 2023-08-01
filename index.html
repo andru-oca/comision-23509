@@ -4,31 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewportwget" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/actions.js" type="module"></script>
     <title>Full Stack Python 2023</title>
 </head>
 <body class="magicpattern">
     <center>
         <h1>FULL STACK PYTHON COMISION  </h1>
         <hr>
-        <div class="container">
-
-            <div class="item">
-                <h2>Asistencia</h2>
-                <a target="_blank" href="https://forms.gle/utJ6HPjU6vbQ6mxA6">
-                    <img src="./assets/imgs/attendance.webp" alt="">
+        <div class="container" id="app">
+            
+            <div class="item" v-for="link in linkers">
+                <h2>{{link.title}</h2>
+                <a target="_blank" v-bind:href="{{link.link_uri}}">
+                    <img :src="link.img_path" :alt="link.title">
                 </a>
                 <p>
-                    Link para la asistencia de nuestra comision, recordar que 
+                    {{ link.texto }}
                 </p>
             </div>
-
-            <div class="item">
-                <h2>Google Meet Link</h2>
-                <a target="_blank" href="https://meet.google.com/weo-rjzx-gxv">
-                    <img src="./assets/imgs/meet.jpg" alt="">
-                </a>
-            </div>
-
             
         </div>
     </center>
