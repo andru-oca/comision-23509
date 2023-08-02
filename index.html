@@ -9,18 +9,23 @@
 </head>
 <body class="magicpattern">
     <center>
-        <h1>FULL STACK PYTHON COMISION  </h1>
-        <hr>
         <div class="container" id="app">
-            
+            <div>
+
+                <h1>FULL STACK PYTHON COMISION {{comision}}</h1>
+                <h2>INSTRUCTOR: ANDERSON OCAÑA TORRES</h2>
+                <h2>TUTOR/A : {{ tutor.toUpperCase() }}</h2>
+            </div>
             <div class="item" v-for="link in linkers">
-                <h2>{{link.title}</h2>
-                <a target="_blank" v-bind:href="{{link.link_uri}}">
+                <h2>{{link.title}}</h2>
+                <a target="_blank" v-bind:href="link.link_uri">
                     <img :src="link.img_path" :alt="link.title">
                 </a>
                 <p>
                     {{ link.texto }}
                 </p>
+
+                
             </div>
             
         </div>

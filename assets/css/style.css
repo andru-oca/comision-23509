@@ -30,6 +30,62 @@ body{
     width: 100%;
     aspect-ratio: 16/9;
 }
+/* 
+
+.item > a > img {
+    --s: 100%;   
+    --b: 8px;     
+    --c: #4ECDC4;
+    --g: 14px;   
+    
+    width: var(--s);
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .4s;
+  }
+
+
+.item > a >  img:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+    border-radius: 10px;
+  }
+ */
+
+
+  .item > a >img {
+    --s: 10px;  /* size of the frame */
+    --b: 2px;   /* border thickness */
+    --w: 100%; /* width of the image */
+    --c: #7B3B3B;
+    
+    width: var(--w);
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: var(--s);
+    --_g: #0000 25%,var(--c) 0;
+    background:
+      conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0,
+      conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0,
+      conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100%,
+      conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100%;
+    background-size: 15% 15%; 
+    background-repeat: no-repeat;
+    outline: calc(var(--w)/2) solid #0009;
+    outline-offset: calc(var(--w)/-2 - var(--s));
+    clip-path: inset(var(--s));
+    transition: .4s;
+    cursor: pointer;
+  }
+  .item > a >img:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--s);
+    clip-path: inset(calc(-1*var(--s) - var(--b)));
+    background-size: 45% 45%;
+    transition: linear .3s, background-size .3s .4s;
+  }
+
 
 .magicpattern { 
     width: 100%;

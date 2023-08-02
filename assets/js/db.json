@@ -33,11 +33,11 @@
     "title": "Formulario Consultas",
     "img_path":"./assets/imgs/consultas.jpg",
     "link_uri":"https://forms.gle/uvntTtVPKHiR9XAz8",
-    "texto":"Formulario de consultas con la tutor: ' Camila Diaz' "
+    "texto":"Formulario de consultas con la tutor/a a cargo"
 
   },
   {
-    "title": "Agencia Aprendizaje a lo largo de la Vida",
+    "title": "Codo a Codo Agencia",
     "img_path":"./assets/imgs/agencia-aprendizaje.jpeg",
     "link_uri":"https://agenciadeaprendizaje.bue.edu.ar/",
     "texto":"URL de la agencia"

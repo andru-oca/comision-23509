@@ -8,7 +8,9 @@ const appCore = {
     data : function(){
         return {
             linkers: [],
-            db_path : "./assets/js/db.json"
+            db_path : "./assets/js/db.json",
+            tutor: "camila diaz",
+            comision:"23506"
         }
     },
     methods: {
