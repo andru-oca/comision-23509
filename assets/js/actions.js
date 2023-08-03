@@ -10,7 +10,8 @@ const appCore = {
             linkers: [],
             db_path : "./assets/js/db.json",
             tutor: "camila diaz",
-            comision:"23506"
+            comision:"23506",
+            istructor_img:"../imgs/pic.jpg"
         }
     },
     methods: {
