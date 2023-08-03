@@ -26,7 +26,7 @@
   {
     "title": "GitHub Repository",
     "img_path":"./assets/imgs/github.jpeg",
-    "link_uri":null,
+    "link_uri":"https://github.com/andru-oca/comision-23506.git",
     "texto":"Repositorio de Github, en ello se subira el codigo, implementando conocimientos de codigo en la nube"
   },
   {
@@ -50,33 +50,33 @@
   },
   {
     "title":"Aula Virtual",
-    "img_path":"./assets/imgs/plan-estudio.jpeg",
-    "link_uri":"https://drive.google.com/file/d/1X41mYqahAAXPgsl79wifmdTbkfowg1fw/view",
-    "texto":"Plan de estudios para la comision de full stack python"
+    "img_path":"./assets/imgs/aulavirtual.png",
+    "link_uri":"https://aulasvirtuales.bue.edu.ar/",
+    "texto":"Link al aula virtual, les recomiendo ingresar por lo menos 1 vez por semana"
   },
   {
     "title":"Visual Studio Code",
-    "img_path":"./assets/imgs/plan-estudio.jpeg",
-    "link_uri":"https://drive.google.com/file/d/1X41mYqahAAXPgsl79wifmdTbkfowg1fw/view",
-    "texto":"Plan de estudios para la comision de full stack python"
+    "img_path":"./assets/imgs/vscode.png",
+    "link_uri":"https://code.visualstudio.com/download",
+    "texto":"Editor de texto por default que vamos a utilizar en toda la cursada"
   },
   {
     "title":"Git",
-    "img_path":"./assets/imgs/plan-estudio.jpeg",
-    "link_uri":"https://drive.google.com/file/d/1X41mYqahAAXPgsl79wifmdTbkfowg1fw/view",
-    "texto":"Plan de estudios para la comision de full stack python"
+    "img_path":"./assets/imgs/git.png",
+    "link_uri":"https://git-scm.com/downloads",
+    "texto":"Herramienta de control de versiones"
   },
   {
     "title":"Python",
-    "img_path":"./assets/imgs/plan-estudio.jpeg",
-    "link_uri":"https://drive.google.com/file/d/1X41mYqahAAXPgsl79wifmdTbkfowg1fw/view",
-    "texto":"Plan de estudios para la comision de full stack python"
+    "img_path":"./assets/imgs/python.png",
+    "link_uri":"https://www.python.org/downloads/",
+    "texto":"Lenguaje de programacion a usar en la comision"
   },
   {
     "title":"Grupos TPO",
-    "img_path":"./assets/imgs/plan-estudio.jpeg",
-    "link_uri":"https://drive.google.com/file/d/1X41mYqahAAXPgsl79wifmdTbkfowg1fw/view",
-    "texto":"Plan de estudios para la comision de full stack python"
+    "img_path":"./assets/imgs/team.jpg",
+    "link_uri":"https://docs.google.com/spreadsheets/d/1aLXD61aWxhdwpQn8jtzG4y8UBounW2JH2Jrz45usxQ4/edit?usp=drive_link",
+    "texto":"Armado de grupos para los trabajos practicos obligatorios"
   }
 
 ]

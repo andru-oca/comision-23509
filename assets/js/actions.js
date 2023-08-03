@@ -11,7 +11,7 @@ const appCore = {
             db_path : "./assets/js/db.json",
             tutor: "camila diaz",
             comision:"23506",
-            istructor_img:"../imgs/pic.jpg"
+            instructorImg:"./assets/imgs/pic.jpg"
         }
     },
     methods: {

@@ -9,18 +9,23 @@
 </head>
 <body class="magicpattern">
     <center>
+        <div>
+
+            <h1>Bienvenidos a Codo a Codo FullStack Python</h1>
+            <p>En esta pagina tenemos los links que vamos a utilizar en el transcurso de la cursada e iremos sumando data extra</p>
+        </div>
+
         <div class="container" id="app">
             <div>
-
-                <h1>FULL STACK PYTHON COMISION {{comision}}</h1>
-                <h2>INSTRUCTOR: ANDERSON OCAÑA TORRES</h2>
-                <img src="instructor_path" alt="">
-                <h2>TUTOR/A : {{ tutor.toUpperCase() }}</h2>
+                <h2>COMISION {{comision}}</h2>
+                <p>INSTRUCTOR: ANDERSON OCAÑA TORRES</p>
+                <img :src="instructorImg" class="img-display border">
+                <p>TUTOR/A : {{ tutor.toUpperCase() }}</p>
             </div>
             <div class="item" v-for="link in linkers">
                 <h2>{{link.title}}</h2>
                 <a target="_blank" v-bind:href="link.link_uri">
-                    <img :src="link.img_path" :alt="link.title">
+                    <img :src="link.img_path" :alt="link.title" class="img-display">
                 </a>
                 <p>
                     {{ link.texto }}
