@@ -47,5 +47,36 @@
     "img_path":"./assets/imgs/plan-estudio.jpeg",
     "link_uri":"https://drive.google.com/file/d/1X41mYqahAAXPgsl79wifmdTbkfowg1fw/view",
     "texto":"Plan de estudios para la comision de full stack python"
+  },
+  {
+    "title":"Aula Virtual",
+    "img_path":"./assets/imgs/plan-estudio.jpeg",
+    "link_uri":"https://drive.google.com/file/d/1X41mYqahAAXPgsl79wifmdTbkfowg1fw/view",
+    "texto":"Plan de estudios para la comision de full stack python"
+  },
+  {
+    "title":"Visual Studio Code",
+    "img_path":"./assets/imgs/plan-estudio.jpeg",
+    "link_uri":"https://drive.google.com/file/d/1X41mYqahAAXPgsl79wifmdTbkfowg1fw/view",
+    "texto":"Plan de estudios para la comision de full stack python"
+  },
+  {
+    "title":"Git",
+    "img_path":"./assets/imgs/plan-estudio.jpeg",
+    "link_uri":"https://drive.google.com/file/d/1X41mYqahAAXPgsl79wifmdTbkfowg1fw/view",
+    "texto":"Plan de estudios para la comision de full stack python"
+  },
+  {
+    "title":"Python",
+    "img_path":"./assets/imgs/plan-estudio.jpeg",
+    "link_uri":"https://drive.google.com/file/d/1X41mYqahAAXPgsl79wifmdTbkfowg1fw/view",
+    "texto":"Plan de estudios para la comision de full stack python"
+  },
+  {
+    "title":"Grupos TPO",
+    "img_path":"./assets/imgs/plan-estudio.jpeg",
+    "link_uri":"https://drive.google.com/file/d/1X41mYqahAAXPgsl79wifmdTbkfowg1fw/view",
+    "texto":"Plan de estudios para la comision de full stack python"
   }
+
 ]
