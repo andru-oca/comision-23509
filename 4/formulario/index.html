@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>CONTACTO</title>
+</head>
+
+<body>
+    <picture class="container">
+        <img src="https://www.nfbuk.org/wp-content/uploads/2016/09/contact-bg.jpg" />
+    </picture>
+
+    <div>
+        <form>
+            <div>
+                <label>NOMBRE</label><input type="text" name="nombre" class="input_data" />
+            </div>
+            <div>
+                <label>APELLIDO</label><input type="text" name="apellido" class="input_data" />
+            </div>
+            <div>
+                <label>EMAIL</label><input type="email" name="email" class="input_data" />
+            </div>
+            <div>
+                <label>EDAD</label><input type="number" name="edad" class="input_data" />
+            </div>
+            <div id="genero">
+                <label>GENERO</label>
+                <div>
+                    <input type="radio" name="genero" value="HOMBRE" class="input_data" />
+                    <span>hombre</span>
+                    <input type="radio" name="genero" value="MUJER" class="input_data" />
+                    <span>mujer</span>
+                    <input type="radio" name="genero" value="NO BINARIO" class="input_data" />
+                    <span>no binario</span>
+                </div>
+            </div>
+            <div>
+                <label for="os">SISTEMA OPERATIVO</label>
+                <input id="os" list="sistema_operativo" name="sistema_operativo" id="os" class="input_data" />
+
+                <datalist id="sistema_operativo">
+                    <option value="Windows"></option>
+                    <option value="Linux"></option>
+                    <option value="MacOs"></option>
+                    <option value="RedHat"></option>
+                </datalist>
+            </div>
+            <div>
+                <label for="colors">COLOR DE STATUS</label>
+                <input type="color" list="redColors" id="colors" name="color_status" class="input_data" />
+                <datalist id="redColors">
+                    <option value="#800000"></option>
+                    <option value="#8B0000"></option>
+                    <option value="#A52A2A"></option>
+                    <option value="#DC143C"></option>
+                </datalist>
+            </div>
+
+            <div>
+                <label>NUMERO DE TICKET</label><input type="number" name="ticket" class="input_data" />
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="mensaje" id="mensaje" class="input-group__input" required />
+                <label for="mensaje" class="input-group__label">MENSAJE</label>
+            </div>
+
+            <button type="submit">ENVIAR TICKET</button>
+        </form>
+    </div>
+</body>
+<script src="./assets/js/index.js" type="module"></script>
+
+</html>
