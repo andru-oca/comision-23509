@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Roboto+Flex:opsz,wght@8..144,100&display=swap");
+
+*,
+html {
+    font-family: "Roboto Flex", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 300px;
+}
+
+body > main > section > div:nth-child(3) > img {
+    opacity: 0.4;
+    border-radius: 50px;
+}
+
+body > main > section > center > div:nth-child(3) {
+    color: #dd5085;
+}
+
+#color__w {
+    color: #6fa8dc;
+}
+
+.ultimo__item {
+    aspect-ratio: 16/10;
+    opacity: 0.8;
+    border-radius: 10px;
+    border-left: 5px solid blue;
+    border-bottom: 5px double yellow;
+}
+
+.productos {
+    padding: 2rem;
+}
+
+.productos > center > div > * {
+    margin: 20px;
+}
+
+.__pretty-color {
+    color: #a297ff;
+}
+
+.bloc {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bloc_bis {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: 0.75s ease-in-out;
+    flex: 1;
+}
+.bloc_bis:hover {
+    flex: 4;
+    cursor: pointer;
+    border-top-left-radius: 2rem;
+}
+
+.bloc_bis:not(:hover) {
+    opacity: 0.5;
+}
+
+.avengers {
+    background-image: url("https://www.infobae.com/new-resizer/7KNePdJw28C4qGQlvDqWcDQ5g7g=/768x432/filters:format(webp):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/04/24133716/avengers-endgame-22.jpg");
+}
+
+.totoro {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BYzJjMTYyMjQtZDI0My00ZjE2LTkyNGYtOTllNGQxNDMyZjE0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg");
+}
+
+.encanto {
+    background-image: url("https://img.remediosdigitales.com/13e539/encanto/1024_2000.jpeg");
+}
