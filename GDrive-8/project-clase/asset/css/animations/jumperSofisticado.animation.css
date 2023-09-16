@@ -1,0 +1,21 @@
+@keyframes jumperSofisticado {
+  100%,
+  0% {
+    transform: translateY(0px) rotateZ(560deg);
+  }
+  10% {
+    transform: translateY(400px) rotateZ(100deg);
+  }
+
+  50% {
+    transform: translateY(0px) rotateZ(-100deg);
+  }
+
+  75% {
+    transform: translateY(-200px) rotateZ(100deg);
+  }
+
+  90% {
+    transform: translateY(0px) scale(0);
+  }
+}

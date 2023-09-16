@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 150svh;
+}
+
+/* header {
+  background-color: lightcoral;
+  height: 10%;
+} */
+
+/* main {
+  background-color: lightskyblue;
+  height: 70%;
+} */
+
+center > h1 {
+  margin: 0;
+}
+
+footer {
+  background-color: lightslategray;
+  height: 20%;
+}
+
+/* [class^="container"] {
+   background-color: yellow; 
+   border: 1px solid blue;
+}*/
+
+.size {
+  height: 200px;
+}
+
+[class^="col"] > p {
+  background-color: black;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70svh;
+}

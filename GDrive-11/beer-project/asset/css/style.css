@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Work+Sans:wght@100&display=swap");
+@import "./header/style.css";
+@import "./main/style.css";
+@import "./footer/style.css";
+
+:root:has(.theme [value="light"]:checked) {
+    --fg: #333;
+    --bg: #fffdf6;
+    --first-color: #333333;
+    --second-color: #ffffff;
+    --third-color: #e1f4f3;
+    --fourth-color: #706c61;
+
+    --font-customize: "IBM Plex Mono", system-ui, "sans-serif";
+}
+
+:root:has(.theme [value="dark"]:checked) {
+    --fg: #fffdf6;
+    --bg: #333;
+    --second-color: #333333;
+    --first-color: #ffffff;
+    --fourth-color: #e1f4f3;
+    --third-color: #706c61;
+    --font-customize: "IBM Plex Mono", system-ui, "sans-serif";
+}
+
+:root {
+    --global-height: 300svh;
+    --section-height: calc(1 / 3 * var(--global-height));
+    --highligth-color: rgb(139, 64, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: var(--global-height);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+
+    background-color: var(--bg);
+    color: var(--fg);
+    gap: 2rem;
+}
+
+header {
+    grid-area: header;
+    box-sizing: border-box;
+}
+
+main {
+    box-sizing: border-box;
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    box-sizing: border-box;
+}

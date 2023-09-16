@@ -1,0 +1,103 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 150vh;
+}
+
+img {
+    width: 400px;
+    aspect-ratio: 16/9;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#best__pizza {
+    color: #473121;
+}
+
+body > main > section > div > .color__main {
+    color: #8206ff;
+}
+
+h3,
+q,
+body > main > section > div > p {
+    color: #b46aff;
+}
+
+header,
+footer {
+    padding: 2rem;
+    height: 100px;
+    color: white;
+    background-color: #222;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    text-transform: uppercase;
+}
+
+main {
+    height: 100%;
+}
+
+footer {
+    height: 100vh;
+    position: relative;
+    bottom: 0;
+}
+
+.__bordeado {
+    border: 10px solid rgba(234, 209, 220, 0.3);
+    padding: 2rem;
+}
+
+.__background {
+    background-color: rgba(234, 209, 220, 0.6);
+}
+
+div > * {
+    margin: 1rem;
+}
+
+header {
+    height: 95vh;
+}
+
+.bloc {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bloc_bis {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+    flex: 1;
+}
+
+.bloc_bis:hover {
+    flex: 4;
+    border-radius: 20px;
+}
+
+.bloc_bis:not(:hover) {
+    opacity: 0.5;
+}
+
+.__interstelar {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/S/pv-target-images/79194981293eabf6620ece96eb5a9c1fffa04d3374ae12986e0748800b37b9cf._RI_TTW_.jpg");
+}
+
+.__napoleon {
+    background-image: url("https://www.latercera.com/resizer/YJFIJRK2sA2SNb2zhUwo5_fXvCo=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/OBF7SB7TWVGMRLV6274TS2NJYU.jpg");
+}
+
+.__training {
+    background-image: url("https://flxt.tmsimg.com/assets/p28363_p_v12_aa.jpg");
+}

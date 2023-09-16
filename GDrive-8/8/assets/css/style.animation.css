@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+}
+
+main {
+    margin: 0;
+    border: 1px solid red;
+    height: 100vh;
+}
+
+div {
+    position: relative;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    height: 200px;
+    width: 200px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    background: radial-gradient(
+        circle at 100%,
+        #333,
+        #333 50%,
+        #eee 65%,
+        #333 75%
+    );
+    transition: all 1s ease;
+}
+
+div:hover {
+    /* transform: rotateZ(-45deg); */
+    /* transform: rotateY(-45deg); */
+    /* transform: rotateX(-45deg); */
+
+    background-color: aqua;
+    transform: scale(0.01) translateX(250px) rotate(-600deg);
+    transition: all 1s cubic-bezier(0.17, 0.67, 0.92, -0.53) 100ms;
+}
+
+/* Animaciones
+
+
+*/
+
+span {
+    display: block;
+    position: relative;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    height: 200px;
+    width: 200px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    background: radial-gradient(
+        circle at 100%,
+        #333,
+        #333 50%,
+        #eee 65%,
+        #333 75%
+    );
+
+    animation-name: mover;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes mover {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}

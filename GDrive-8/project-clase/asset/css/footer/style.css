@@ -1,0 +1,18 @@
+@import url("./jumper.animation.css");
+@import url("./colorChange.animation.css");
+
+footer > div {
+  position: relative;
+  top: calc(50% - 100px);
+  left: calc(50% - 150px);
+
+  display: inline-block;
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  background-color: blueviolet;
+}
+
+footer > div:nth-child(2) {
+  animation: jumper 2s infinite ease-in-out, changeColor 2s infinite ease-in-out;
+}

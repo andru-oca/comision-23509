@@ -1,0 +1,69 @@
+header nav {
+    --background-transparent: transparent;
+}
+
+header nav {
+    background-color: transparent;
+
+    position: fixed;
+    top: 20px;
+    width: 80%;
+    height: 5rem;
+
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+}
+
+header nav ul li {
+    align-items: center;
+    height: 100%;
+    display: grid;
+}
+
+header nav ul li a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: var(--fg);
+    position: relative;
+    top: -10px;
+    width: 0%;
+    transition: all ease-in-out 500ms;
+}
+
+header nav ul li a:hover::before {
+    width: 100%;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    /* color: color-mix(in srgb, var(--bg) 100%, var(--fg) 80%); */
+    color: transparent;
+    transition: all ease-in-out 500ms;
+}
+header nav ul li a:hover {
+    color: var(--fg);
+}
+
+.scrolled-nav {
+    background: linear-gradient(to left, var(--highligth-color), transparent);
+    color: var(--bg);
+    transition: all 1s ease-in-out;
+}
+
+.scrolled-nav a {
+    color: color-mix(in srgb, var(--bg) 60%, var(--fg) 80%);
+}
+
+.scrolled-nav li:hover a {
+    color: color-mix(in srgb, var(--fg) 10%, var(--bg) 100%);
+}

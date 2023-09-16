@@ -1,0 +1,32 @@
+@import url("./header/style.css");
+@import url("./main/style.css");
+@import url("./footer/style.css");
+
+:root {
+  --heigth: 300svh;
+  --width: 100svw;
+}
+
+:root:has(.theme [value="dark"]:checked) {
+  --bg: hsl(200 50% 5%);
+  --fg: hsl(200 10% 98%);
+}
+
+:root:has(.theme [value="light"]:checked) {
+  --bg: hsl(200 10% 92%);
+  --fg: hsl(200 50% 10%);
+}
+
+html {
+  background: var(--bg);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui;
+  font-size: 2.25rem;
+  height: var(--heigth);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Noto+Sans+JP:wght@100;500&display=swap");
+@import url("./design.css");
+@import url("./landing.page.css");
+:root {
+  /*TAMAÑOS*/
+  --root-h: 200vh;
+  font-size: 12px;
+
+  /*COLORES*/
+  --color-main: #000000;
+  --color-sec: #ff1e56;
+  --color-inver: #ffac41;
+  --color-tr: rgba(50, 50, 50, 1);
+
+  /* colores otra empresa */
+
+  /*
+  --color-main: #064273;
+  --color-sec: #7fcdf4;
+  --color-inver: #7fcdff;
+  --color-tr: rgba(6, 66, 115, 0.5);
+  */
+
+  /*FUENTES*/
+
+  --font-base: Verdana, Geneva, Tahoma, sans-serif;
+  --font-custom: "Noto Sans JP", sans-serif;
+  --font-custom-2: "Caveat", cursive;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: var(--root-h);
+  background-color: var(--color-main);
+}

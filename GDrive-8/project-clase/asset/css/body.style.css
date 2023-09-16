@@ -1,0 +1,19 @@
+@import url("./main/style.css");
+@import url("./header/style.css");
+@import url("./footer/style.css");
+@import url("./animations/jumperSofisticado.animation.css");
+
+header,
+main,
+footer {
+  height: 100%;
+  border: 3px solid orange;
+}
+
+header {
+  height: 50%;
+}
+
+.jumper {
+  animation: jumperSofisticado 2s ease-in-out infinite;
+}

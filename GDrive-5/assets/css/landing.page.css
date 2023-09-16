@@ -1,0 +1,28 @@
+.bloc {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.bloc_bis {
+  background-size: cover;
+  background-position: center;
+  transition: 0.75s ease-in-out;
+  flex: 1;
+}
+
+.__uno {
+  background-image: url("https://soranews24.com/wp-content/uploads/sites/3/2022/01/Spirited-Away-fan-theory-Studio-Ghibli-anime-movie-Japan-film-news-Hayao-Miyazaki-Chihiro-Haku-4.jpg");
+}
+
+.__dos {
+  background-image: url("https://cdn.theatlantic.com/thumbor/a6r_eTA_6ZQoZToRceey0q7qEm4=/0x0:1920x1080/960x540/media/img/mt/2015/05/man/original.jpg");
+}
+
+.__tres {
+  background-image: url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/04/jurassic-world-dominion-2663171.jpg");
+}
+
+.bloc_bis:hover {
+  flex: 4;
+}

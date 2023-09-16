@@ -1,0 +1,87 @@
+:root:has(.theme > [value="dark"]:checked) {
+    --bg: hsl(200 50% 5%);
+    --fg: hsl(200 10% 98%);
+    --line: hsl(250 75% 80%);
+}
+
+:root:has(.theme [value="light"]:checked) {
+    --bg: hsl(200 10% 92%);
+    --fg: hsl(200 50% 10%);
+    --line: #f71f6c;
+}
+
+html {
+    background: var(--bg);
+}
+
+body {
+    font-family: system-ui;
+    font-size: 2.25rem;
+    display: grid;
+    min-block-size: 100dvh;
+    place-content: center;
+}
+
+nav ul {
+    --_gap: 2rem;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    color: var(--fg);
+    opacity: 0.7;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    opacity: 1;
+}
+
+nav li {
+    overflow: hidden;
+    position: relative;
+    padding: calc(var(--_gap) / 2);
+    min-inline-size: 3rem;
+}
+
+nav li::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    inset-block-end: 0;
+    block-size: 2px;
+    background: var(--line);
+
+    translate: var(--_translate, 0);
+    scale: var(--_scale, 0) 1;
+    transition: scale 100ms var(--_scale-delay, 0ms), translate 200ms;
+}
+
+/* A previous sibling is hovered */
+nav li:hover ~ li {
+    --_translate: -100%;
+    --_scale-delay: 200ms;
+}
+
+/* Any other sibling is hovered */
+nav:hover li {
+    --_translate: 100%;
+    --_scale-delay: 200ms;
+}
+
+/*
+  The actually hovered <li>
+
+  NOTE: same specificity as previous selector, so it must either come after or be artificially inflated (eg. :hover:hover)
+*/
+nav li:hover {
+    --_scale: 1;
+    --_translate: 0;
+    --_scale-delay: 0ms;
+}

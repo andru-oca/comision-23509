@@ -1,0 +1,15 @@
+header {
+  overflow: hidden;
+}
+
+header img {
+  width: 100%;
+  height: fit-content;
+  filter: grayscale(200%);
+  transition: all 1s ease-in-out;
+}
+
+header img:hover {
+  transform: scale(1.6);
+  filter: grayscale(0%);
+}

@@ -1,0 +1,31 @@
+h3 + .adyacente {
+    background-color: #122;
+    color: white;
+    padding: 10px;
+}
+
+/* li ~ li {
+    color: red;
+} */
+
+/* PSEUDO CLASES 
+
+Son selectores que marcan los elementos que estan en un estado determinado.
+*/
+
+/* div:nth-child(n-1) {
+    background-color: red;
+} */
+
+input[type="text"] {
+    width: 50%;
+}
+input::placeholder {
+    color: red;
+    opacity: 0.4;
+}
+
+li::before {
+    content: "🔥";
+    display: block;
+}

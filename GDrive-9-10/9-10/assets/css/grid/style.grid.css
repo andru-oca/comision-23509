@@ -1,0 +1,126 @@
+body {
+  background-image: url("https://goreg.com/wp-content/uploads/2014/04/bokeh-cover-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100svh;
+}
+
+main {
+  box-sizing: border-box;
+  height: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 2rem;
+  gap: 1rem;
+
+  grid-template-areas:
+    "a b b"
+    "c c d"
+    "e f d";
+}
+
+main > section {
+  border-radius: 1rem;
+}
+
+main > section:nth-child(1) {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5fbc4a62c2150e62cfcb09aa/1659582060083-7H2KN14ADKZZX7B3OVKH/Joker%2B2019.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main > section:nth-child(2) {
+  background-image: url("https://carwow-uk-wp-3.imgix.net/18015-MC20BluInfinito-scaled-e1666008987698.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main > section:nth-child(3) {
+  background-image: url("https://www.cronista.com/files/image/302/302003/5ffe1dd3e898c.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main > section:nth-child(4) {
+  background-image: url("https://bnetcmsus-a.akamaihd.net/cms/content_folder_media/RAEJ6ORD25SI1395874791749.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main > section:nth-child(5) {
+  background-image: url("https://st.depositphotos.com/1006065/2004/i/950/depositphotos_20041987-stock-photo-sunset-beach-this-photo-made.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main > section:nth-child(6) {
+  background-image: url("https://hips.hearstapps.com/hmg-prod/images/spider-man-across-the-spider-verse-1642154456.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main > section :nth-child(1) {
+  grid-area: a;
+
+  /* grid-column-start: 1;
+    grid-column-end: 2;
+    
+    grid-row-start: 1;
+    grid-row-end: 2; */
+}
+main > section:nth-child(2) {
+  grid-area: b;
+  /* grid-column-start: 2;
+  grid-column-end: 4;
+
+  grid-row-start: 1;
+  grid-row-end: 2; */
+}
+main > section:nth-child(3) {
+  grid-area: c;
+  /* grid-column: 1 / span 2;
+    grid-row: 2 / span 1; */
+}
+main > section:nth-child(4) {
+  grid-area: d;
+  /* grid-column: 3 / span 1;
+    grid-row: 2 / span 2; */
+}
+main > section:nth-child(5) {
+  grid-area: e;
+}
+main > section:nth-child(6) {
+  grid-area: f;
+}
+
+section:nth-child(1) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+  padding: 2rem;
+}
+
+section:nth-child(1) > div {
+  width: 100px;
+  aspect-ratio: 16/9;
+  background-color: lightpink;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  flex-grow: 1;
+  opacity: 0.4;
+}
+
+/* 
+Mobile devices – 320px — 480px
+iPads, Tablets – 481px — 768px
+Small screens, laptops – 769px — 1024px
+Desktops, large screens – 1025px — 1200px
+Extra large screens, TV – 1201px, and more */

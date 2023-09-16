@@ -1,0 +1,47 @@
+header > .logo__design {
+    height: 100%;
+}
+
+header > .logo__design label {
+    cursor: pointer;
+}
+
+header > .logo__design {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+header > .logo__design a:visited,
+header > .logo__design a:link,
+header > .logo__design a:focus {
+    color: var(--fg);
+    text-decoration: none;
+}
+
+header > .logo__design h1 {
+    --_font-logo-size: 5em;
+    text-align: center;
+    font-size: clamp(1em, 10vw + 1em, var(--_font-logo-size));
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--bg);
+    transition: all 500ms ease-in-out;
+}
+
+/* REFLECTION EFFECT  */
+header > .logo__design h1:hover {
+    text-shadow: 2px -1px 1px;
+    -webkit-box-reflect: below -45px linear-gradient(transparent, transparent, var(--bg));
+}
+
+.theme input[type="radio"] {
+    visibility: hidden;
+    border: 1px solid red;
+}
+
+header .theme [value="dark"]:checked {
+    pointer-events: all;
+}

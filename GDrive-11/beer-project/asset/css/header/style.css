@@ -1,0 +1,11 @@
+@import "./logo/style.css";
+@import "./nav/style.css";
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: var(--section-height);
+
+    justify-content: center;
+    align-items: center;
+}

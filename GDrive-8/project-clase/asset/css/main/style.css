@@ -1,0 +1,49 @@
+main {
+  overflow: hidden;
+}
+main h1 {
+  color: var(--fg);
+  transform: rotateZ(360deg);
+  transition: all 2s ease-in-out;
+  transition-delay: 1s;
+}
+
+main h1::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+
+  display: block;
+  background: black;
+  transition: all 1s ease-in-out;
+  transform: translateX(200px);
+}
+
+/*hermano directo*/
+
+main h1 + p {
+  color: aquamarine;
+}
+
+main h1 ~ p {
+  color: aquamarine;
+}
+
+section > h1:hover + p {
+  scale: 1.5;
+}
+
+[data-font="color"] {
+  color: lightblue;
+}
+
+/*pseudo clases*/
+
+section:last-child > h1 {
+  font-weight: 900;
+  color: lightpink;
+}
+
+section:nth-child(2) {
+  background-color: lightgreen;
+}

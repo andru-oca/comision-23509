@@ -1,0 +1,35 @@
+header {
+  /* margin: 2em; */
+  padding: 2em;
+  background: var(--gradient-linear);
+  overflow-y: scroll;
+}
+
+header > a {
+  display: block;
+
+  border: 3px solid red;
+  margin: 2rem 3rem 2rem 4rem;
+  padding: 30px 10px 30px 10px;
+  border: 3px solid blue;
+
+  border-top: none;
+  border-left: none;
+
+  border-radius: 1rem;
+  background-color: plum;
+
+  width: 40%;
+
+  max-width: 40%;
+  min-width: 150px;
+
+  font-size: clamp(0.5rem, 3vw + 0.5rem, 2rem);
+}
+
+header > a:active,
+header > a:link,
+header > a:visited {
+  color: white;
+  text-decoration: none;
+}

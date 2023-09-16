@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.clase.css" />
+    <title>SELECTORES AVANZADOS Y ANIMACIONES</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>SELECTORES AVANZADOS</li>
+                <li>ANIMACIONES CON CSS</li>
+                <li>TRANSFORMACIONES</li>
+                <li>TRANSICIONES</li>
+                <li>INTRO A RESPONSIVE WEB DESIGN</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="section" id="div_1">
+            <p>Tipos de selectores avanzados</p>
+            <div>
+                <ul>
+                    <li>
+                        <p>
+                            Por agrupado => Seleccionamos utilizando las
+                            comas.
+                            <br />
+                            <code>
+                                    h1, p, a { background-color : red; }
+                                </code>
+                        </p>
+                    </li>
+                    <li>
+                        <code>
+                                Selectores por espacio => nos permiten tener
+                                seleccionados elementos que no le importen su
+                                proximidad, es decir puedo tener lo siguiente
+                                div p { color: blue; }
+                            </code>
+                    </li>
+
+                    <li>
+                        <h3>Elementos que tienen el hermano adyacente</h3>
+                        <code class="adyacente">
+                                Hermano adyacente (+) sample
+                            </code>
+                    </li>
+
+                    <li>
+                        <p>Valores contiguos</p>
+                        <code>
+                                <ul>
+                                    <li>[attr]</li>
+                                    <li>[attr=value]</li>
+                                    <li>[attr~=value]</li>
+                                    <li>[attr|=value]</li>
+                                    <li>[attr^=value]</li>
+                                    <li>[attr$=value]</li>
+                                    <li>[attr*=value]</li>
+                                </ul>
+                            </code>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <div class="section" id="div_2">
+            <input type="text" placeholder="VALORES MODIFICADOS POR EL PSEUDO ELEMENTO" />
+        </div>
+        <div class="section" id="div_3"></div>
+        <div class="section" id="div_4"></div>
+        <div class="section" id="div_5"></div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

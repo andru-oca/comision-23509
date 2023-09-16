@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
+
+:root {
+  --color-text: hsl(0, 0%, 30%);
+  --color-blinker: hsl(0, 0%, 80%);
+  --text-family: "Anonymous Pro", monospace;
+}
+
+body {
+  height: 100svh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container h1 {
+  color: var(--color-text);
+  font-size: 70px;
+  font-weight: bold;
+
+  letter-spacing: 10px;
+  cursor: pointer;
+  text-align: center;
+  border-right: 2px solid var(--color-blinker);
+  font-family: var(--text-family);
+  /*steps: es la cantidad de palabras mas espacios*/
+  animation: typing 10s steps(39) infinite, blinker 800ms infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*animaciones*/
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+    min-width: 500px;
+  }
+}
+
+@keyframes blinker {
+  from {
+    border-right-color: var(--color-blinker);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}

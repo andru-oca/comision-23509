@@ -1,0 +1,21 @@
+@media (480px < width <= 800px) {
+  body {
+    height: 100svh;
+  }
+  main {
+    box-sizing: border-box;
+    height: 100%;
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 2rem;
+    gap: 2rem;
+
+    grid-template-areas:
+      "a c"
+      "b b"
+      "d f"
+      "e e";
+  }
+}

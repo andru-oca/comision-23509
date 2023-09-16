@@ -1,0 +1,40 @@
+.bloc {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+
+    padding: 0 4rem 0 4rem;
+}
+.bloc_bis {
+    background-size: cover;
+    background-position: left;
+    transition: 0.75s ease-in-out;
+    flex: 1;
+    border-radius: 2rem;
+}
+
+.__uno {
+    background-image: url("../media/img/totoro.webp");
+}
+
+.__dos {
+    background-image: url("../media/img/superman.jpg");
+}
+
+.__tres {
+    background-image: url("../media/img/jurassic-park.jpg");
+}
+
+.bloc_bis:hover {
+    flex: 4;
+    filter: grayscale(0%) contrast(100%);
+    border-radius: 0;
+    background-position: center;
+
+    background-clip: border-box;
+}
+
+.bloc_bis:not(:hover) {
+    filter: grayscale(100%) contrast(200%);
+    transition: filter 500ms ease;
+}

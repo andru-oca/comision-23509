@@ -1,0 +1,47 @@
+@import url("./header.style.css");
+@import url("./main.style.css");
+
+:root {
+  --gradient-radial-color: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(50, 49, 112, 1) 14%,
+    rgba(64, 64, 134, 1) 41%,
+    rgba(51, 93, 158, 1) 49%,
+    rgba(38, 122, 182, 1) 66%,
+    rgba(20, 164, 216, 1) 82%,
+    rgba(19, 167, 218, 1) 83%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  --gradient-linear: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100svh;
+  border: 5px solid red;
+  box-sizing: border-box;
+}
+
+header {
+  height: 30%;
+  border: 4px solid peru;
+  box-sizing: border-box;
+}
+
+main {
+  box-sizing: border-box;
+  border: 4px solid blueviolet;
+  height: 200vh;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+
+    <!-- GOOGLE ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- JS COMMING SOON!!! -->
+    <script src="./asset/js/index.js" defer></script>
+    <title>beer-project</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <ul>
+          <li><a href="#header"> beer-project </a></li>
+          <li><a href="#beers"> beers</a></li>
+          <li><a href=""> beer store</a></li>
+          <li><a href="">contact us</a></li>
+        </ul>
+      </nav>
+      <div class="logo__design">
+        <h1>
+          <a href=""> BEER PROJECT </a>
+        </h1>
+        <div class="theme">
+          <label for="light">
+            <span class="material-symbols-outlined"> light_mode </span>
+          </label>
+          <span>
+            <input type="radio" id="light" name="theme" value="light" />
+          </span>
+          <span>
+            <label for="dark">
+              <span class="material-symbols-outlined"> dark_mode </span>
+            </label>
+            <input type="radio" id="dark" name="theme" value="dark" checked />
+          </span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+          voluptas voluptatem asperiores pariatur nam atque exercitationem sint,
+          sunt provident consequatur doloremque totam facere iste excepturi
+          culpa temporibus dolorum accusamus error!
+        </p>
+      </section>
+      <section class="beers" id="beers">
+        <div class="beer__container">
+          <div class="beer__image">
+            <img src="./asset/media/img/beer-glass.webp" alt="" />
+          </div>
+          <div class="content">
+            <h2>BEER CARD</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis hic
+              dolores dolorum voluptatum, repellat odit magni velit accusantium
+              nam est ipsam nesciunt quaerat repudiandae doloremque. Id facere
+              vitae quasi deserunt.
+            </p>
+            <button class="btn card_btn">Read More</button>
+          </div>
+        </div>
+        <div class="beer__container"></div>
+        <div class="beer__container"></div>
+        <div class="beer__container"></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

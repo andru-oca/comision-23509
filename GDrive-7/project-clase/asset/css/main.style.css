@@ -1,0 +1,64 @@
+main {
+  background-color: blue;
+  isolation: isolate;
+}
+
+main > * {
+  width: 200px;
+  aspect-ratio: 16/9;
+  background-color: thistle;
+  border: 3px solid blueviolet;
+  border-radius: 1rem;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c9/Boca_escudo.png");
+  background-position: center;
+  background-size: cover;
+  transition: all 400ms ease-in-out;
+
+  filter: grayscale(100%);
+}
+
+main > div:nth-child(2) {
+  position: relative;
+  top: -50px;
+  left: 100px;
+  z-index: -1;
+}
+
+main > div:nth-child(3) {
+  position: relative;
+  top: -80px;
+  left: 200px;
+  z-index: -2;
+}
+
+main > div:hover {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png");
+  filter: grayscale(0%);
+}
+/*
+main > div:nth-child(1) {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+} */
+
+/* main > div:nth-child(1) > h4 {
+  position: relative;
+  top: -20px;
+} */
+
+/* main > div:nth-child(2) {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+} */
+
+/* main > div {
+  height: 100%;
+}
+
+main > div h1 {
+  position: sticky;
+  top: 2rem;
+  text-align: center;
+} */
