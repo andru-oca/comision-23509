@@ -1,0 +1,9 @@
+.smooth{
+    background-color: #666;
+    color: white;
+    transition:  all 500ms ease-in-out;
+}
+.smooth:hover{
+    background-color: whitesmoke;
+    color: #666;
+}
