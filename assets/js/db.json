@@ -91,4 +91,11 @@
     "link_uri":"https://drive.google.com/file/d/1sBzzwbHJWidUQ5IyawXz_YDkR7B0HMyy/view",
     "texto":"Consignas del TPO FRONT END"
   }
+  ,
+  {
+    "title":"Formulario TP",
+    "img_path":"./assets/imgs/front-end-tpo.jpg",
+    "link_uri":"https://forms.gle/o4wt2v8fRox4F5Rv9",
+    "texto":"Formulario del tpo con los datos del proyecto y equipo"
+  }
 ]
