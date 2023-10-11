@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <title>CLASE RESPASO Y DESPUES VUE</title>
+  </head>
+  <body>
+    <main>
+      <div id="app">
+        <div v-once>
+          <h1>{{msg}}</h1>
+          <p v-text="msg"></p>
+        </div>
+
+        <div>
+          <button @click="()=>msg = msg.toUpperCase()">upperCase</button>
+          <button @click="()=>display = !display">mostrar/!mostrar</button>
+        </div>
+        <hr />
+
+        <h1>EL CONTADOR ESTA EN: {{count}}</h1>
+
+        <hr />
+
+        <div>
+          <button @click="count--">-</button>
+          <button @click="count++">+</button>
+        </div>
+        <div v-show="display">
+          <p>{{ textoLargo }}</p>
+        </div>
+
+        <div v-if="count > 15">
+          <p>{{ textoLargo }}</p>
+        </div>
+        <h1>{{mensaje}}</h1>
+        <div>
+          <input type="text" v-model.lazy="mensaje" />
+          <input type="number" v-model="cantidadVinos" />
+          <button @click="()=> vinosMostrados = vinos.slice(0,cantidadVinos)">
+            cant de vinos
+          </button>
+        </div>
+        <hr />
+        <div>
+          <div v-for="vino in vinosMostrados">
+            <p>{{vino.wine}}</p>
+            <p>{{vino.location}}</p>
+            <img :src="vino.image" :alt="vino.wine" v-bind:class="vinosStyle" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+  <script src="./asset/js/index.js" type="module"></script>
+</html>
