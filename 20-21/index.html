@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue 20-21</title>
+  </head>
+  <body>
+    <center>
+      <header></header>
+      <main id="main">
+        <h1>{{titulo}}</h1>
+        <form>
+          <div v-for="(value,key) in form">
+            <label> {{value.label}}</label>
+            <br />
+            <input
+              v-model="usuarioInput[key]"
+              :type="value.type"
+              v-bind:placeholder="value.placeholder"
+            />
+          </div>
+
+          <hr />
+          <button @click="agregarUserHandler($event)">Agregar un user</button>
+          <hr />
+          <h2 v-show="errorPost!=null">{{errorPost}}</h2>
+        </form>
+
+        <hr />
+        <button @click="getUsersHandler">GET users</button>
+        <h1 v-show="users.length!=0">LISTA DE USUARIOS</h1>
+        <vueuser v-for="user in users" :user="user"></vueuser>
+      </main>
+      <footer></footer>
+    </center>
+  </body>
+  <script type="module" src="./asset/js/index.js"></script>
+</html>
