@@ -1,0 +1,31 @@
+{
+    "name": {
+        "label": "Nombre de serie",
+        "type": "text",
+        "placeholder": "Ingresa el nombre de la serie"
+    },
+    "img": {
+        "label": "Imagen de la serie",
+        "type": "url",
+        "placeholder": "https://url/serie.jpg"
+    },
+    "rating": {
+        "label": "Rating de la serie",
+        "type": "number",
+        "placeholder": " Del 1 al 5 ⭐"
+    },
+    "episodes": {
+        "label": "Cantidad de episodios",
+        "type": "number",
+        "placeholder": "1-100"
+    },
+    "release_year": {
+        "label": "Fecha de lanzamiento",
+        "type": "date"
+    },
+    "sinopsis":{
+        "label": "Sinopsis de la serie",
+        "type": "text",
+        "placeholder": "Está basado en el libro de ..."
+    }
+}

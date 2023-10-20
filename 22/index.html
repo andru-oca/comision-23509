@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue ultima clase</title>
+  </head>
+  <body>
+    <header></header>
+    <main id="main">
+      <h1>FORMULARIO DE CREACION SERIES</h1>
+      <code v-show="errorPost != null" style="color: red"> {{errorPost}}</code>
+      <hr />
+      <form v-if="form != null">
+        <div v-for="(value,key) in form">
+          <label>{{value.label}}</label>
+          <details>{{serie[key]}}</details>
+          <br />
+          <input
+            v-bind:type="value.type"
+            :placeholder="value.placeholder"
+            v-model.lazy="serie[key]"
+          />
+        </div>
+        <hr />
+        <button @click="postSerieHandler($event)">SUBIR UNA SERIE</button>
+      </form>
+      <h3 v-else-if="errorForm != null">{{errorForm}}</h3>
+      <h3 v-else>still downloading ...</h3>
+
+      <hr />
+
+      <button @click="getSeriesHandler">GET Series</button>
+      <hr />
+
+      <serie
+        v-for="serie in series"
+        :serie="serie"
+        @click="selectClick(serie.id)"
+      >
+      </serie>
+    </main>
+    <footer></footer>
+  </body>
+  <script type="module" src="./asset/js/index.js"></script>
+</html>
