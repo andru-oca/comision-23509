@@ -33,6 +33,7 @@ from database import create_database
 from controllers import read_user
 from controllers import create_user
 from controllers import delete_user
+from controllers import update_user
 
 db_users:list[dict] = create_database() 
 print(db_users)
@@ -53,6 +54,12 @@ Bienvenido a nuestro gestor de usuarios
     if opcion == "b":
         read_user( dni := input("ingrese dni \n") ,db_users )
         return 
+    
+    if opcion == "c":
+        update_user( dni := input("ingrese dni \n") ,db_users )
+        print(db_users)
+        return 
+    
     if opcion == "d":
         print(id(db_users))
         print(len(db_users))
