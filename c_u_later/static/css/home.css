@@ -1,0 +1,153 @@
+.portada_section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_portada_xs {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img_portada_sm {
+  display: none;
+}
+
+.img_portada_xl {
+  display: none;
+}
+/* Animación del título*/
+
+.titulo {
+  position: absolute;
+  color: white;
+  text-align: center;
+  top: 10px;
+  animation: text-shadow-pop-bottom 2s both;
+}
+
+@keyframes text-shadow-pop-bottom {
+  0% {
+    text-shadow: 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c,
+      0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c, 0 0 #5555555c;
+    transform: translateY(0);
+  }
+  100% {
+    text-shadow: 0 0.5px #5555555c, 0 1px #5555555c, 0 1.5px #5555555c,
+      0 2px #5555555c, 0 2.5px #5555555c, 0 3px #5555555c, 0 3.5px #5555555c,
+      0 4px #5555555c;
+    transform: translateY(-6px);
+  }
+}
+
+/* Formulario de búsqueda  */
+.form_busqueda_contenedor {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario_busqueda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3em;
+  margin-top: 5rem;
+  gap: 35px;
+}
+
+.form-div {
+  width: 300px;
+  height: 37.33px;
+  flex-shrink: 0;
+  color: white;
+  position: relative;
+}
+
+label {
+  position: absolute;
+  top: -23px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+select,
+input {
+  background-color: rgba(217, 217, 217, 0.2);
+  border: 3px solid white;
+  border-radius: 8px;
+  width: 300px;
+  height: 38px;
+  padding: auto;
+  color: rgb(86, 86, 86);
+}
+
+@media (min-width: 768px) {
+  .titulo {
+    margin-top: 60px;
+  }
+  .img_portada_xs {
+    display: none;
+  }
+  .img_portada_sm {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .img_portada_xl {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .titulo {
+    margin-top: 60px;
+  }
+  .img_portada_xs {
+    display: none;
+  }
+  .img_portada_sm {
+    display: none;
+  }
+  .img_portada_xl {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .form_busqueda_contenedor {
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .form_busqueda_contenedor > button {
+    margin-top: 50px;
+    margin-bottom: 5rem;
+  }
+
+  .formulario_busqueda {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    gap: 0;
+  }
+
+  .form-div{
+    width: clamp(8rem, 18vw, 13rem);
+    max-width: 100vh;
+  }
+
+  select,
+  input {
+    width: clamp(7rem, 17vw, 11rem);
+    height: 6rem;
+    margin: 0;
+    padding: 0;
+  }
+}

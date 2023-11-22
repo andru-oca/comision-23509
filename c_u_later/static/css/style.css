@@ -1,0 +1,54 @@
+@import "./variables.css";
+@import "./navbar.css";
+@import "./home.css";
+@import "./ofertas.css";
+@import "./companias_section.css";
+@import "./nosotros.css";
+@import "./destacados.css";
+@import "./testimonios.css";
+@import "./formulario.css";
+@import "./footer.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 40px;
+}
+
+body {
+  background-image: url('/static/media/img/fondo.webp');
+  background-size: cover;
+}
+
+main {
+  padding-top: 40px;
+}
+
+section h2 {
+  text-align: left;
+  margin: 60px 5px 15px 10px ;
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+}
+
+
+.video{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-top: 0;
+  }
+
+  .video{
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+}
+}

@@ -1,0 +1,36 @@
+.companias_section {
+  color: white;
+}
+
+.companias_section > h2{
+  margin-bottom: clamp(2rem, 4vw, 4rem);
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  margin: 3rem;
+  gap: 30px;
+}
+
+.logos > img {
+  width: clamp(10rem, 18vw, 16rem);
+  transition: transform 0.5s;
+}
+
+.logos > img:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width:768px) {
+    .logos {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width:1024px) {
+    .logos {
+        grid-template-columns: repeat(3,1fr);
+    }
+}

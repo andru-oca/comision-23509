@@ -1,0 +1,494 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static './css/style.css' %}" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <title>Sea You Later - Tu Agencia de Cruceros</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- Sección Navbar -->
+      <nav class="navbar2" id="navbar">
+        <div class="nav-items">
+          <a href="#" class="nav-item">Inicio</a>
+          <a href="#destacados" class="nav-item">Destacados</a>
+          <a href="#companias" class="nav-item">Compañías</a>
+          <a href="#nosotros" class="nav-item">Sobre Nosotros</a>
+          <a href="#fromulario" class="nav-item">Contacto</a>
+        </div>
+        <img
+          class="icon_menu"
+          src="{% static './media/img/icon _menu.svg' %}"
+          alt="logo menu hamburguesa"
+        />
+        <a href="#"
+          ><img
+            class="syl_logo"
+            src="{% static './media/img/SYL_logo.svg' %}"
+            alt="SeaYouLater logo"
+        /></a>
+
+        <!--Menu desplegable / mobile-->
+        <div id="menu2" class="menu">
+          <img
+            class="icon_close"
+            src="{% static './media/img/icon_close.svg' %}"
+            alt="icono de cierre"
+          />
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#destacados">Destacados</a></li>
+            <li><a href="#companias">Compañías</a></li>
+            <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#fromulario">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Sección portada -->
+      <section class="portada_section">
+        <div class="titulo tracking-in-expand">
+          <h1>Sea You Later</h1>
+          <h3>Tu Agencia de Cruceros</h3>
+        </div>
+        <img
+          class="img_portada_xs"
+          src="{% static './media/img/cruceroXS.webp' %}"
+          alt="portada/imagen de un crucero al atardecer"
+        />
+        <img
+          class="img_portada_sm"
+          src="{% static './media/img/cruceroSM.webp' %}"
+          alt="portada/imagen de un crucero al atardecer"
+        />
+        <img
+          class="img_portada_xl"
+          src="{% static './media/img/cruceroXL.webp' %}"
+          alt="portada/imagen de un crucero al atardecer"
+        />
+      </section>
+
+      <!-- Sección formulario de busqueda -->
+      <section>
+        <form class="form_busqueda_contenedor" id="busqueda_form">
+          <div class="formulario_busqueda">
+            <div class="form-div">
+              <label for="destino">¿A dónde?</label>
+              <select id="destino" name="destino" required>
+                <option value="" disabled selected>Destino</option>
+                <option value="Europa">Europa</option>
+                <option value="America del Norte">América del Norte</option>
+                <option value="Centroamérica">Centroamérica</option>
+                <option value="America del Sur">América del Sur</option>
+                <option value="Asia">Asia</option>
+              </select>
+            </div>
+            <div class="form-div">
+              <label for="puerto-salida">Salida desde:</label>
+              <select id="puerto-salida" name="puerto-salida">
+                <option value="" disabled selected>Salida</option>
+                <option value="Europa">Europa</option>
+                <option value="America del Norte">América del Norte</option>
+                <option value="Centroamérica">Centroamérica</option>
+                <option value="America del Sur">América del Sur</option>
+                <option value="Asia">Asia</option>
+              </select>
+            </div>
+            <div class="form-div">
+              <label for="compania">Compañía</label>
+              <select id="compania" name="compania">
+                <option value="" disabled selected>Compañía</option>
+                <option value="MSC">MSC</option>
+                <option value="COSTA">COSTA</option>
+                <option value="Royal">Royal</option>
+                <option value="Viking">Viking</option>
+                <option value="Star Cruises">Star Cruises</option>
+                <option value="Carnival">Carnival</option>
+                <option value="AIDA">AIDA</option>
+                <option value="Seabourn">Seabourn</option>
+                <option value="Norwegian">Norwegian</option>
+              </select>
+            </div>
+            <div class="form-div">
+              <label for="duracion">¿Duración?</label>
+              <select id="duracion" name="duracion">
+                <option value="" disabled selected>Duración</option>
+                <option value="">Menos de 10 días</option>
+                <option value="">Más de 10 días</option>
+              </select>
+            </div>
+            <div class="form-div">
+              <label for="fecha">¿Cuándo?</label>
+              <input type="date" id="fecha" name="fecha" required />
+            </div>
+            <div class="form-div">
+              <label for="huespedes">Cantidad de Huéspedes</label>
+              <input
+                type="number"
+                id="huespedes"
+                name="huespedes"
+                min="1"
+                max="10"
+                required
+              />
+            </div>
+          </div>
+          <button class="formulario-form-button" type="submit">Buscar</button>
+        </form>
+      </section>
+
+      <!-- Sección Carrusel  -->
+      <section>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active destacados-card-1">
+              <div>
+                <h3>Descubre el paraiso en el mar</h3>
+                <p>
+                  Explora destinos exóticos y culturas unicas en nuestros
+                  cruceros
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item active destacados-card-2">
+              <div>
+                <h3>Emociónate en Alta Mar</h3>
+                <p>
+                  Vive aventuras inolvidables en nuestros más exclusivos
+                  cruceros
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item active destacados-card-3">
+              <div>
+                <h3>Elegancia y conford a bordo</h3>
+                <p>Relajate y disfruta en nuestros cruceros 5 estrellas</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Sección Destacados (proximamente: Ofertas) -->
+      <section id="destacados">
+        <h2>Destacados</h2>
+        <!-- Cards de ofertas -->
+        <div class="ofertas-cards">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front img1">
+                <h3>Mediterráneo</h3>
+              </div>
+              <div class="flip-card-back img1__back">
+                <p>Disfruta de mucha historia y sabor</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front img2">
+                <h3>Caribe</h3>
+              </div>
+              <div class="flip-card-back img2__back">
+                <p>Paraíso bajo el sol.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front img3">
+                <h3>Asia</h3>
+              </div>
+              <div class="flip-card-back img3__back">
+                <p>Cultura y exotismo</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front img4">
+                <h3>Sudamerica</h3>
+              </div>
+              <div class="flip-card-back img4__back">
+                <p>Explora la gran diversidad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección video desktop -->
+      <section class="parallax-container">
+        <div class="parallax-video">
+          <video class="video" autoplay loop muted>
+            <source
+              src="{% static './media/video_crucero.mp4' %}"
+              type="video/mp4"
+            />
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+        </div>
+      </section>
+
+      <!-- Sección de Logos de Compañías -->
+      <section id="companias" class="companias_section">
+        <h2>Compañías</h2>
+        <div class="logos">
+          <img
+            src="{% static './media/img/logos_companias/msc_cruises_logo.webp' %}"
+            alt="logo de MSC Cruceros"
+          />
+          <img
+            src="{% static './media/img/logos_companias/royal_caribbean_group_logo.webp' %}"
+            alt="logo de Royal Caribbean Group"
+          />
+          <img
+            src="{% static './media/img/logos_companias/viking_cruises_logo.webp' %}"
+            alt="logo de Viking Cruises"
+          />
+          <img
+            src="{% static './media/img/logos_companias/norwegian-cruise-line-logo.webp' %}"
+            alt="logo de Norwegian Cruise Line"
+          />
+          <img
+            src="{% static './media/img/logos_companias/seabourn_logo.webp' %}"
+            alt="logo de Seabourn"
+          />
+          <img
+            src="{% static './media/img/logos_companias/star_cruises_logo.webp' %}"
+            alt="logo de Star Cruises"
+          />
+          <img
+            src="{% static './media/img/logos_companias/carnival_cruises_logo.webp' %}"
+            alt="logo de Carnival Cruises"
+          />
+          <img
+            src="{% static './media/img/logos_companias/costa-logo.webp' %}"
+            alt="logo de Costa"
+          />
+          <img
+            src="{% static './media/img/logos_companias/aida_logo.webp' %}"
+            alt="logo de AIDA"
+          />
+        </div>
+      </section>
+
+      <!-- Seccion Sobre nosotos" -->
+      <section id="nosotros" class="sobre_nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+          Somos una agencia de viajes altamente especializada, nuestra pasión
+          son los cruceros y nuestro conocimiento en el sector es incomparable.
+          Nos enfocamos exclusivamente en la planificación y organización de
+          cruceros, lo que nos convierte en verdaderos expertos en este campo.
+        </p>
+        <p>
+          Nuestro equipo está formado por asesores altamente cualificados que
+          tienen un compromiso constante con la excelencia. Realizamos visitas
+          regulares a los barcos, participamos en seminarios y mantenemos
+          estrechas relaciones con las principales compañías de cruceros. Esta
+          dedicación nos permite ofrecerte un asesoramiento de la más alta
+          calidad en cada etapa de tu viaje.
+        </p>
+        <h4>Lo que nos distingue:</h4>
+        <p>
+          <strong>- Atención Personalizada:</strong> Nuestro compromiso es
+          brindarte un servicio altamente personalizado. Entendemos que cada
+          viaje es único, y nos esforzamos por adaptar cada detalle a tus
+          necesidades específicas.
+        </p>
+        <p>
+          <strong>- Especialización en Cruceros:</strong> No somos una agencia
+          de viajes común, somos especialistas en cruceros. Esta dedicación nos
+          permite ofrecerte un conocimiento profundo y actualizado de los
+          destinos, barcos y compañías de cruceros.
+        </p>
+        <p>
+          <strong>- Navegación Sencilla y Clara:</strong> Nuestra misión es
+          hacerte sentir cómodo y seguro al planificar tu crucero. Nuestra
+          plataforma en línea es intuitiva y fácil de usar, y estamos
+          disponibles para responder a tus preguntas en cualquier momento.
+        </p>
+        <p>
+          Te invitamos a unirte a la experiencia única de viajar en crucero con
+          nosotros, donde la excelencia en el servicio y la pasión por los
+          viajes se unen para crear recuerdos inolvidables.
+        </p>
+      </section>
+
+      <!-- Sección testimonios -->
+      <section>
+        <h2>Nuestros clientes dicen:</h2>
+        <div class="testimonios_container">
+          <div class="cards_testimonios">
+            <div class="cards_testimonios__name">
+              <p class="name">Flarien</p>
+              <div class="stars">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+              </div>
+            </div>
+            <p class="description">
+              La MEJOR experiencia que tuve en la vida. Me encanta
+            </p>
+          </div>
+          <div class="cards_testimonios">
+            <div class="cards_testimonios__name">
+              <p class="name">Fabri Reto</p>
+              <div class="stars">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+              </div>
+            </div>
+            <p class="description">
+              Muy buen servicio, lo recomiendo para cualquier viaje de placer
+              que deseen hacer.
+            </p>
+          </div>
+          <div class="cards_testimonios">
+            <div class="cards_testimonios__name">
+              <p class="name">Axelsat</p>
+              <div class="stars">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+              </div>
+            </div>
+            <p class="description">
+              Si esto fuera un TP se merecen aprobar con un 10, chicos. Son la
+              onda
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección formulario de contacto -->
+      <section id="fromulario">
+        <h2 class="formulario-title">Formulario de contacto:</h2>
+        <!-- formualrio  -->
+        <form id="contact-form" class="formulario-form">
+          <div class="form-container-nameAndEmail">
+            <div class="formulario-form-name">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nombre:"
+                required
+              />
+            </div>
+            <div class="formulario-form-correo">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Correo:"
+                required
+              />
+            </div>
+          </div>
+          <div class="formulario-form-mensaje">
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Mensaje:"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="formulario-form-button">Enviar</button>
+        </form>
+        <div class="spinner-hidden spinner"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-text">
+        <p>SYL - © Todos los derechos reservados</p>
+      </div>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com" target="_blank">
+          <img
+            class="footer-icon"
+            src="{% static './media/img/face.svg' %}"
+            alt="Icono 1"
+          />
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img
+            class="footer-icon"
+            src="{% static './media/img/x.svg' %}"
+            alt="Icono
+          2"
+          />
+        </a>
+        <a
+          href="https://www.https://mail.google.com/mail/u/0/#inbox"
+          target="_blank"
+        >
+          <img
+            class="footer-icon"
+            src="{% static './media/img/mail.svg' %}"
+            alt="Icono 3"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="{% static './js/script.js' %}"></script>
+  </body>
+</html>
