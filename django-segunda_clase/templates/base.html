@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static './css/style.css' %}" />
+    <title>Segunda Parte Django</title>
+  </head>
+
+  <body>
+    <div class="loader">
+      <div class="balls"></div>
+    </div>
+
+    <header class="header" id="header">
+      <nav class="navbar">
+        <a href="#top" class="brand">
+          <div class="logo"><i class="fa fa-rocket"></i></div>
+          <h3>{{comision}}</h3>
+        </a>
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+        <span class="overlay"></span>
+        <div class="menu" id="menu">
+          <ul class="menu-inner">
+            <li class="menu-item">
+              <a class="menu-link" href="{% url 'index' %}">Store Manager</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="{% url 'tienda:all' %}">CRUD STORES</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    {% block content %} {% endblock %}
+  </body>
+  <script src=" https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js "></script>
+  <script src="{% static './js/index.js' %}"></script>
+</html>

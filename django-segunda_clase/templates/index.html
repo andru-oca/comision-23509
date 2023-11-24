@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div id="particles-js"></div>
+
+<section class="hero" id="top">
+    <div class="title">
+        <h1 class="intro">
+            <span class="magic">
+                <span class="magic-star">
+                    <svg viewBox="0 0 512 512">
+                        <path
+                            d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                    </svg>
+                </span>
+                <span class="magic-star">
+                    <svg viewBox="0 0 512 512">
+                        <path
+                            d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                    </svg>
+                </span>
+                <span class="magic-star">
+                    <svg viewBox="0 0 512 512">
+                        <path
+                            d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                    </svg></span>
+
+                <span class="magic-text">Codo a Codo </span></span> Comisión {{comision}}
+        </h1>
+    </div>
+</section>
+
+<section class="section">
+    <div class="desktop-wrapper">
+        <div class="carousel reflect">
+            <ul class="carousel__list" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
+                <li class="carousel__item" data-pos="-2"></li>
+                <li class="carousel__item" data-pos="-1"></li>
+                <li class="carousel__item" data-pos="0"></li>
+                <li class="carousel__item" data-pos="1"></li>
+                <li class="carousel__item" data-pos="2"></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

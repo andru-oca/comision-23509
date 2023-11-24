@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<main>
+  <div>
+    <h2>Tiendas</h2>
+    <h3><a href="{% url 'tienda:create' %}">Crear un tienda</a></h3>
+    <div class="list">
+      {% for tienda in tienda_list %}
+      <fieldset>
+        <legend>Nombre: {{tienda.nombre}}</legend>
+        <ul>
+          <li>Direccion de la tienda : {{tienda.ubicacion}}</li>
+          <li>Contacto: {{tienda.contacto}}</li>
+          <li>Rubro: {{tienda.rubro}}</li>
+          <li>Decha de alta : {{tienda.fecha_habilitacion}}</li>
+        </ul>
+
+        <div>
+          <a href="{% url 'tienda:detail' tienda.id  %}">
+            Detalle de {{tienda.nombre}} 🟢</a
+          >
+        </div>
+        <div>
+          <a href="{% url 'tienda:delete' tienda.id %}"
+            >Borrar {{tienda.nombre }} ❌</a
+          >
+        </div>
+        <div>
+          <a href="{% url 'tienda:update' tienda.id %}"
+            >Editar {{tienda.nombre }}📋</a
+          >
+        </div>
+      </fieldset>
+      {% endfor %}
+    </div>
+  </div>
+</main>
+{% endblock %}
