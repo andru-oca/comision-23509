@@ -1,0 +1,17 @@
+
+        >>>
+        Codigo ID mascota: 6e55b9c7-844e-4f97-b78c-32de5172a8e7
+        Soy un perro
+        Tengo 2
+        Mi nombre es pepito
+        >>>>
+
+        
+        >>>
+        Codigo ID mascota: 5d97e9ce-c472-4082-8c61-e2e05f5742c5
+        Soy un gato violento
+        Tengo 10
+        Mi nombre es gatoben
+        >>>>
+
+        

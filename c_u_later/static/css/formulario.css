@@ -1,0 +1,147 @@
+.formulario-form {
+  font-family: var(--font-secondary);
+  color: var(--color-primary);
+  font-size: medium;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  font-weight: 600;
+}
+
+.form-container-nameAndEmail {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+.formulario-form ::placeholder {
+  color: #413e33b6;
+  font-weight: 600;
+}
+
+.formulario-form-name,
+.formulario-form-correo {
+  width: 100%;
+  margin: 5px auto;
+}
+
+.formulario-form-name input,
+.formulario-form-correo input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #ffffff64;
+  box-shadow: #9c650c 1px 1px 1px 1px;
+  background: #bcbcbcba;
+  outline: none;
+  color: #131210;
+  text-shadow: #8b8b8bc3 1px 1px;
+  font-family: var(--font-secondary);
+  padding: 10px;
+}
+
+.formulario-form-mensaje {
+  margin: 5px auto;
+  width: 300px;
+  width: 50%;
+}
+
+.formulario-form-mensaje textarea {
+  font-family: var(--font-secondary);
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #ffffff64;
+  box-shadow: #9c650c 1px 1px 1px 1px;
+  background: #bcbcbcba;
+  resize: none;
+  outline: none;
+  color: #131210;
+  text-shadow: #8b8b8bc3 1px 1px;
+  height: 150px;
+  padding: 10px;
+  width: 100%;
+}
+
+.formulario-form input:focus,
+.formulario-form textarea:focus {
+  background: #ffe695e2;
+}
+
+.formulario-form-button {
+  margin: 5px auto;
+  width: 123px;
+  height: 38px;
+  background: #023047;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 1.5em;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.spinner {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #d1d1d1;
+  border-top-color: #b67f07;
+  transition: opacity 0.7s, visibility 0.7s;
+  animation: loading 0.7s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.spinner-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .form-container-nameAndEmail {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  .formulario-form-mensaje {
+    width: 50%;
+  }
+
+  .formulario-form-name input,
+  .formulario-form-correo input,
+  .formulario-form-mensaje textarea {
+    font-size: medium;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-container-nameAndEmail {
+    width: 40%;
+  }
+
+  .formulario-form-mensaje {
+    width: 40%;
+  }
+
+  .formulario-form-name input,
+  .formulario-form-correo input,
+  .formulario-form-mensaje textarea {
+    font-size: large;
+  }
+}
+

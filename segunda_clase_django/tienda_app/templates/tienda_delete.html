@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<main>
+  <div>
+    <h2>Estas seguro que deseas borrar esta tienda?</h2>
+    <h2>{{tienda.nombre}}</h2>
+    <form method="post">
+      {% csrf_token %} {{form.as_p}}
+      <input type="submit" value="{{ tipo }}" />
+    </form>
+
+    <a href="{% url 'tienda:all' %}">Cancelar borrado</a>
+  </div>
+</main>
+
+{% endblock %}

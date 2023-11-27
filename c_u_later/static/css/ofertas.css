@@ -1,0 +1,173 @@
+
+/* 
+
+.ofertas-card-content {
+  border-radius: 30px;
+  width: 296px;
+  height: 209px;
+  background: hsla(0, 0%, 100%, 0.056);
+}
+
+.ofertas-cards h3 {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+.ofertas-cards p {
+  margin-top: 50px;
+  padding: 20px;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 1300px) {
+  .ofertas-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .ofertas-cards {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+} */
+
+.ofertas-cards {
+  font-family: var(--font-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+
+.flip-card-front h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+
+}
+
+.flip-card-back {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  transform: rotateY(180deg);
+}
+
+.flip-card-back::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.229); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+.img1 {
+  background-image: url("/static/media/img/ofertas/mediterraneo.webp");
+  color: white;
+  background-size: cover;
+}
+.img1__back {
+  background-image: url("/static/media/img/ofertas/ofertas-card-1.webp");
+  color: white;
+  background-size: cover;
+}
+
+.img2 {
+  background-image: url("/static/media/img/ofertas/caribe.webp");
+  color: white;
+  background-size: cover;
+}
+.img2__back {
+  background-image: url("/static/media/img/ofertas/ofertas-card-2.webp");
+  color: white;
+  background-size: cover;
+}
+
+.img3 {
+  background-image: url("/static/media/img/ofertas/asia.webp");
+  color: white;
+  background-size: cover;
+}
+.img3__back {
+  background-image: url("/static/media/img/ofertas/ofertas-card-3.webp");
+  color: white;
+  background-size: cover;
+}
+
+.img4 {
+  background-image: url("/static/media/img/ofertas/sudamerica.webp");
+  color: white;
+  background-size: cover;
+}
+.img4__back {
+  background-image: url("/static/media/img/ofertas/ofertas-card-4.webp");
+  color: white;
+  background-size: cover;
+}
+
+
+@media (min-width: 768px) {
+  .ofertas-cards {
+  font-family: var(--font-secondary);
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-top: 1.5rem;
+}
+}
+
+@media (min-width: 1024px) {
+  .ofertas-cards {
+  font-family: var(--font-secondary);
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  margin-top: 3rem;
+}
+}
